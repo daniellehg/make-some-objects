@@ -5,3 +5,6 @@ function Cube(length,mass) {
     this.density = this.mass/this.volume;
     this.surfaceArea = 6 * (Math.pow(this.length,2));
 }
+function Person(firstName,lastName,birthDate){
+
+}
