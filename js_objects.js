@@ -35,17 +35,14 @@ function sayHi() {
 
 }
 
-function age(){
-    var date = new date;
-    return Math.floor((new Date() - this.birthDate)/1000/60/60/24/365);
-
-}
-
 function Person(firstName, lastName, birthDate) {
     this.firstName = firstName;
     this.lastName = lastName;
     this.birthDate = new Date("03/09/2001");
     this.sayHi = sayHi;
-    this.age = age;
+    this.age = function age(){
+    var date = new date;
+    return Math.floor((new Date() - this.birthDate)/1000/60/60/24/365);
 
+}
 }
