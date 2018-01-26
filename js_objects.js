@@ -44,23 +44,37 @@ function Person(firstName, lastName, birthDate) {
         var date = new date;
         return Math.floor((new Date() - this.birthDate) / 1000 / 60 / 60 / 24 / 365);
 
-    } this.getSign = function zodiac(){
+    }
+    this.getSign = function zodiac() {
         var today = new Date();
         var date = today.getDate();
         var month = today.getMonth();
         var bMonth = birthDate.bMonth();
-        var bDate = birthDate. bDate();
-        if(bMonth)
+        var bDate = birthDate.bDate();
+        if ()
     }
 }
 
-function Pet(name,species){
+function Pet(name, species, 0, 0, true) {
     this.name = name;
     this.species = species;
     this.sleepy = 0;
     this.hunger = 0;
     this.awake = true;
-    this.speak = function speak(){
-
+    this.speak = function speak() {
+        if (species = "dog") {
+            return "Woof! That means I love you!"
+            this.sleepy = this.sleepy++;
+            this.hunger = this.hunger++;
+        }else {
+                return "Ugh. meow.";
+                this.sleepy = this.sleepy++;
+                this.hunger = this.hunger++;
+            }
+        }
+    this.eat = function eat(){
+        if(species = "crocodile")
+            return "That guy captain Hook-What a Guy!"
     }
-}
+    }
+
