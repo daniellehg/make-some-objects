@@ -51,11 +51,86 @@ function Person(firstName, lastName, birthDate) {
         var month = today.getMonth();
         var bMonth = birthDate.bMonth();
         var bDate = birthDate.bDate();
-        if ()
+         if (month == 0) {
+            if (day <= 20) {
+                return "Capricorn";
+            } else if (day > 20) {
+                return "Aquarius";
+            }
+        } else if (month == 1) {
+            if (day <= 19) {
+                return "Aquarius";
+            } else if (day > 19) {
+                return "Pisces";
+            }
+        } else if (month == 2) {
+            if (day <= 20) {
+                return "Pisces";
+            } else if (day > 20) {
+                return "Aries";
+            }
+        } else if (month == 3) {
+            if (day <= 20) {
+                return "Aries";
+            } else if (day > 20) {
+                return "Taurus";
+            }
+        } else if (month == 4) {
+            if (day <= 21) {
+                return "Taurus";
+            } else if (day > 21) {
+                return "Gemini";
+            }
+        } else if (month == 5) {
+            if (day <= 21) {
+                return "Gemini";
+            } else if (day > 21) {
+                return "Cancer";
+            }
+        } else if (month == 6) {
+            if (day <= 22) {
+                return "Cancer";
+            } else if (day > 22) {
+                return "Leo";
+            }
+        } else if (month == 7) {
+            if (day <= 22) {
+                return "Leo";
+            } else if (day > 22) {
+                return "Virgo";
+            }
+        } else if (month == 8) {
+            if (day <= 23) {
+                return "Virgo";
+            } else if (day > 23) {
+                return "Libra";
+            }
+        } else if (month == 9) {
+            if (day <= 23) {
+                return "Libra";
+            } else if (day > 23) {
+                return "Scorpio";
+            }
+        } else if (month == 10) {
+            if (day <= 22) {
+                return "Scorpio";
+            } else if (day > 22) {
+                return "Sagittarius";
+            }
+        } else if (month == 11) {
+            if (day <= 21) {
+                return "Sagittarius";
+            } else if (day > 21) {
+                return "Capricorn";
+            }
+        }
+
     }
 }
 
-function Pet(name, species, 0, 0, true) {
+
+
+function Pet(name, species) {
     this.name = name;
     this.species = species;
     this.sleepy = 0;
@@ -63,18 +138,26 @@ function Pet(name, species, 0, 0, true) {
     this.awake = true;
     this.speak = function speak() {
         if (species = "dog") {
+            this.sleepy++;
+            this.hunger++;
             return "Woof! That means I love you!"
-            this.sleepy = this.sleepy++;
-            this.hunger = this.hunger++;
         }else {
-                return "Ugh. meow.";
-                this.sleepy = this.sleepy++;
-                this.hunger = this.hunger++;
+                this.sleepy++;
+                this.hunger++;
+            return "Ugh. meow.";
             }
+
         }
     this.eat = function eat(){
-        if(species = "crocodile")
-            return "That guy captain Hook-What a Guy!"
+         if (species = "dog") {
+            this.sleepy++;
+            this.hunger = 0;
+            return "Nom nom nom nom. Yum, thank you for this delicious food! I love you!"
+        }else {
+                this.sleepy++;
+                this.hunger = 0;
+            return "Ugh, I guess I'll eat this.";
+            }
     }
     }
 
