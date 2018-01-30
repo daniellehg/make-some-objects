@@ -42,12 +42,10 @@ function Person(firstName, lastName, birthDate) {
         return Math.floor((new Date() - this.birthDate) / 1000 / 60 / 60 / 24 / 365);
 
     }
-    this.getSign = function zodiac() {
-        var today = new Date();
-        var date = today.getDate();
-        var month = today.getMonth();
-        var bMonth = birthDate.bMonth();
-        var bDate = birthDate.bDate();
+    this.getSign = function getSign() {
+        var date = new Date(birthDate);
+        var day = date.getDate();
+        var month = date.getMonth();
          if (month == 0) {
             if (day <= 20) {
                 return "Capricorn";
