@@ -38,7 +38,7 @@ function sayHi() {
 function Person(firstName, lastName, birthDate) {
     this.firstName = firstName;
     this.lastName = lastName;
-    this.birthDate = new Date("03/09/2001");
+    this.birthDate = birthDate();
     this.sayHi = sayHi;
     this.age = function age() {
         var date = new date;
@@ -157,6 +157,21 @@ function Pet(name, species) {
                 this.sleepy++;
                 this.hunger = 0;
             return "Ugh, I guess I'll eat this.";
+            }
+    }
+    this.nap = function nap() {
+        this.sleepy = 0;
+        this.awake = false;
+        return "Zzzz..."
+    }
+    this.wakeUp = function wakeUp(){
+        this.awake = false;
+        this.sleepy = 0;
+        this.hunger = 4;
+         if (species = "dog") {
+            return "I'm awake! Let's eat and then play! I love you!"
+        }else {
+            return "Ugh, I'm awake now. Is there anything to eat around here?";
             }
     }
     }
