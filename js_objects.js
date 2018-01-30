@@ -6,7 +6,11 @@ function Cube(length, mass) {
     this.surfaceArea = 6 * (Math.pow(this.length, 2));
 }
 
-function sayHi() {
+function Person(firstName, lastName, birthDate) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.birthDate = new Date(birthDate);
+    this.sayHi = function sayHi() {
     var today = new Date();
     var day = today.getDay();
     var hour = today.getHours();
@@ -34,14 +38,7 @@ function sayHi() {
 
 
 }
-
-function Person(firstName, lastName, birthDate) {
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.birthDate = birthDate();
-    this.sayHi = sayHi;
     this.age = function age() {
-        var date = new date;
         return Math.floor((new Date() - this.birthDate) / 1000 / 60 / 60 / 24 / 365);
 
     }
@@ -127,8 +124,6 @@ function Person(firstName, lastName, birthDate) {
 
     }
 }
-
-
 
 function Pet(name, species) {
     this.name = name;
